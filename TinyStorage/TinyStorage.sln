@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TinyStorage", "TinyStorage.csproj", "{606A0D6B-21F4-4C71-85D9-8EE334F846F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testing", "..\Testing\Testing.csproj", "{4AAB8699-447D-4544-B8A7-B5065B2BB6FB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{606A0D6B-21F4-4C71-85D9-8EE334F846F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{606A0D6B-21F4-4C71-85D9-8EE334F846F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{606A0D6B-21F4-4C71-85D9-8EE334F846F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{606A0D6B-21F4-4C71-85D9-8EE334F846F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AAB8699-447D-4544-B8A7-B5065B2BB6FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AAB8699-447D-4544-B8A7-B5065B2BB6FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AAB8699-447D-4544-B8A7-B5065B2BB6FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AAB8699-447D-4544-B8A7-B5065B2BB6FB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DB5539CB-B207-44C0-AE78-6C699ABCBCFC}
+	EndGlobalSection
+EndGlobal
