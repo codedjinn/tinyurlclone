@@ -24,7 +24,7 @@ module.exports = {
     extensions: ['.tsx', '.ts', '.js'],
   },
   output: {
-    path: `${__dirname}/public`,
+    path: `${__dirname}/build`,
     publicPath: '/',
     filename: 'app.js',
   },
@@ -34,7 +34,7 @@ module.exports = {
     }),
   ],
   devServer: {
-    contentBase: path.resolve(__dirname, 'public'),
+    contentBase: path.resolve(__dirname, 'build'),
     liveReload: true,
     port: 9000,
     historyApiFallback: true,
