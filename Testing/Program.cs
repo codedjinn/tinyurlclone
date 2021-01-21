@@ -10,8 +10,6 @@ namespace Testing
     {
         static async Task Main(string[] args)
         {
-            //var connectionString = "DefaultEndpointsProtocol=https;AccountName=tiny-storage;AccountKey=es04nLCyKpDflFwXboGImsNrNBY5JngQrkcl7qNsvUGWTiRZDFXHq70u0fDFtBxkdLHkhorET7f4h9JnClI4cg==;TableEndpoint=https://tiny-storage.table.cosmos.azure.com:443/;";
-
             ServiceProvider provider = (Service.ConfigureServices() as ServiceCollection)
                                             .AddSingleton<ILogger, DummyLogger>()
                                             .BuildServiceProvider();
