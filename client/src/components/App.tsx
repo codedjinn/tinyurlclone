@@ -1,20 +1,36 @@
 import React from 'react';
-import styled from 'styled-components';
+import { Login } from './Login';
 
-interface AppProps {
-  name: string;
-}
-
-type ContainerProps = {
-  padding?: string | 0;
-  margin?: string | 0;
+type AppProps = {
+    isLoggedIn: boolean;
 };
+type AppState = {};
 
-export const Container = styled.div<ContainerProps>`
-  padding: ${props => ('padding' in props ? props.padding : '0')};
-  margin: ${props => ('margin' in props ? props.margin : 0)};
-`;
-
-export default function App({ name }: AppProps) {
-  return <Container padding="100px">Hello {name}!</Container>;
+export class App extends React.Component<AppProps, AppState> {
+    render() {
+        if (!this.props.isLoggedIn) {
+            return <Login></Login>
+        }
+        else {
+            return <div>LOGGED IN!</div>
+        }        
+    }
 }
+
+// interface AppProps {
+//   name: string;
+// }
+
+// type ContainerProps = {
+//   padding?: string | 0;
+//   margin?: string | 0;
+// };
+
+// export const Container = styled.div<ContainerProps>`
+//   padding: ${props => ('padding' in props ? props.padding : '0')};
+//   margin: ${props => ('margin' in props ? props.margin : 0)};
+// `;
+
+// export default function App({ name }: AppProps) {
+//   return <Container padding="100px">Hello {name}!</Container>;
+// }
