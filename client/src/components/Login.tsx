@@ -1,5 +1,6 @@
 import React from "react";
 import { Button, FormControl } from 'react-bootstrap';
+import { UserManager } from "../UserManager";
 
 const inputStyle = {
     marginTop: "10px"
@@ -24,7 +25,8 @@ export class Login extends React.Component<{}, LoginState> {
             //
             return;
         }
-
+        
+        UserManager.GetUser("asd","asd@asd.asd");
         
     }
 
