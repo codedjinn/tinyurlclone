@@ -1,0 +1,7 @@
+{
+  "profiles": {
+    "func-urls": {
+        "commandName": "Project"
+    }
+  }
+}

@@ -14,9 +14,14 @@ namespace Testing
                                             .AddSingleton<ILogger, DummyLogger>()
                                             .BuildServiceProvider();
 
-            var userStore = provider.GetService<IUserStore>();
 
-            var user = userStore.GetUsers();
+            var configService = provider.GetService<IConfigurationService>();
+            configService.Add("AzureTableStorageConnection", "DefaultEndpointsProtocol=https;AccountName=tiny-clone-tables;AccountKey=SJmvQVR88WFCzpEoUxHlqalYcAtLe2ncisXeH6QCTHmvQCcFGh448xk7u67EQsqM5zZg1qaR45S3QQxxWILjxQ==;TableEndpoint=https://tiny-clone-tables.table.cosmos.azure.com:443/;");
+           
+            var userStore = provider.GetService<IUserStore>();
+            var user = await userStore.GetUser("entity", "ent@mail.com");
+            //var result = await userStore.CreateUser("entity", "ent@mail.com");
+            //var users = userStore.GetUsers();
 
             //var mgr = new TinyStorage.Manager(connectionString, new DummyLogger());
             //var users = mgr.GetUsers();
